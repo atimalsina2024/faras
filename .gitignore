@@ -1,0 +1,12 @@
+# Ignore Eclipse files
+.project
+.classpath
+.settings/
+
+# Target/classes
+target/
+bin/
+
+# OS files
+.DS_Store
+Thumbs.db
