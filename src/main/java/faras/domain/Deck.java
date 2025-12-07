@@ -16,19 +16,6 @@ public class Deck {
 		Collections.shuffle(deckOfCards);
 	}
 	
-	public Card dealCard() {
-		if(deckOfCards.isEmpty()) {
-			throw new RuntimeException("Deck is empty");
-		}
-		else {
-			Card drawnCard = deckOfCards.get(0);
-			deckOfCards.remove(0);
-			return drawnCard;
-			
-		}
-	}
-	
-	
 	public void resetDeck() {
 		buildNewDeck();
 		shuffleDeck();
@@ -44,5 +31,13 @@ public class Deck {
 			}
 		}
 	}
+	
+	public int getRemainingCardsOnDeck() {
+		return this.deckOfCards.size();
+	}
+	public List<Card> getDeckOfCards(){
+		return this.deckOfCards;
+	}
+
 
 }

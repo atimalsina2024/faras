@@ -25,4 +25,9 @@ public enum Rank {
 	public int getValue() {
 		return this.value;
 	}
+	
+	@Override
+	public String toString() {
+		return String.valueOf(value);
+	}
 }

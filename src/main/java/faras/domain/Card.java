@@ -20,8 +20,12 @@ public class Card {
 	
 	@Override
 	public String toString() {
-		return rank + " of " + suit;
+		return rank.toString() + " of " + suit.toString();
 		
+	}
+	
+	public String toShortString() {
+		return String.valueOf(rank.toString().charAt(0) + suit.toString().charAt(0));
 	}
 
 }
